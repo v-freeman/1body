@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="main">
+					<div class="main__image-ibg"><img src="img/main/main.jpg" alt="main">
+						<div class="main__container">
+							<div class="main__title">Аппаратная коррекция фигуры</div>
+							<!-- /.main__title -->
+							<div class="main__line"></div><!-- /.main__line -->
+							<div class="main__subtitle">Студия Body Time</div>
+							<!-- /.main__subtitle -->
+							<button class="main__button button">Записаться</button>
+							<!-- /.main__button -->
+							<div class="main__arrow _icon-arrow-r"></div>
+							<!-- /.main__arrow -->
+							</div>
+					</div>
+				</section>
+				<!-- /.main -->
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,67 @@
+.main {
+	/* .main__image-ibg */
+	&__image-ibg {
+		@include adaptiveValue("height", 840, 496);
+	}
+	/* .main__container */
+	&__container {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 1;
+		border: 3px solid #ccc;
+		@include adaptiveValue("padding-top", 140, 72);
+		@include adaptiveValue("padding-bottom", 140, 48);
+		text-align: center;
+		align-items: center;
+		color: $c_w;
+				font-family: "Vanta Light";
+	}
+	/* .main__title */
+	&__title {
+		@include adaptiveValue("max-width", 717, 288);
+		@include adaptiveValue("font-size", 56, 30);
+		line-height: math.div(72.8, 56);
+		&:not(:last-child){
+			@include adaptiveValue("padding-bottom", 35, 22);
+		}
+	}
+	/* .main__line */
+	&__line {
+		@include adaptiveValue("width", 120, 104);
+		height: 2px;
+		background: $c_w;
+		&:not(:last-child){
+			@include adaptiveValue("margin-bottom", 40, 24);
+		}
+
+	}
+	/* .main__subtitle */
+	&__subtitle {
+		@include adaptiveValue("font-size", 25, 16);
+		line-height: math.div(32, 25);
+		&:not(:last-child){
+			@include adaptiveValue("padding-bottom", 80, 56);
+		}
+	}
+	/* .main__button */
+	&__button {
+		font-size: rem(18);
+		@include adaptiveValue("font-size", 18, 14);
+		text-align: center;
+		&:not(:last-child){
+			@include adaptiveValue("margin-bottom", 159, 65);
+
+		}
+	}
+	/* .main__arrow */
+	&__arrow {
+		transform: rotate(90deg);
+	}
+}
+.button {
+}
+
+//====================================================================================================
+
+//====================================================================================================
