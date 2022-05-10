@@ -1,32 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="main">
-					<div class="main__image-ibg"><img src="img/main/main.jpg" alt="main">
-						<div class="main__container">
-							<div class="main__title">Аппаратная коррекция фигуры</div>
-							<!-- /.main__title -->
-							<div class="main__line"></div><!-- /.main__line -->
-							<div class="main__subtitle">Студия Body Time</div>
-							<!-- /.main__subtitle -->
-							<button class="main__button button">Записаться</button>
-							<!-- /.main__button -->
-							<div class="main__arrow _icon-arrow-r"></div>
-							<!-- /.main__arrow -->
-							</div>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="main">
+				<div class="main__image-ibg"><img src="img/main/main.jpg" alt="main">
+					<div class="main__container">
+						<div class="main__title">Аппаратная коррекция фигуры</div>
+						<!-- /.main__title -->
+						<div class="main__line"></div><!-- /.main__line -->
+						<div class="main__subtitle">Студия Body Time</div>
+						<!-- /.main__subtitle -->
+						<button class="main__button button">Записаться</button>
+						<!-- /.main__button -->
+						<div class="main__arrow _icon-arrow-r"></div>
+						<!-- /.main__arrow -->
 					</div>
-				</section>
-				<!-- /.main -->
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<h2 class="about__title title">О нас</h2>
+					<div class="about__items">
+						<div class="about__item item-about">
+							<img class="item-about__img" src="img/about/octiconlight.svg" alt="octiconlight">
+							<!-- /.item-about__img -->
+							<div class="item-about__text">Квалифицированный персонал</div>
+							<!-- /.item-about__text -->
+						</div>
+						<!-- /.about__item -->
+						<div class="about__item item-about">
+							<img class="item-about__img" src="img/about/solidhand.svg" alt="solidhand">
+							<!-- /.item-about__img -->
+							<div class="item-about__text">Индивидуальный подход к каждому клиенту</div>
+							<!-- /.item-about__text -->
+						</div>
+						<!-- /.about__item -->
+						<div class="about__item item-about">
+							<img class="item-about__img" src="img/about/arrow_h.svg" alt="arrow">
+							<!-- /.item-about__img -->
+							<div class="item-about__text">100% гарантия результата</div>
+							<!-- /.item-about__text -->
+						</div>
+						<!-- /.about__item -->
+						<div class="about__item item-about">
+							<img class="item-about__img" src="img/about/atom.svg" alt="atom">
+							<!-- /.item-about__img -->
+							<div class="item-about__text">Новейшие методики похудения</div>
+							<!-- /.item-about__text -->
+						</div>
+						<!-- /.about__item -->
+						<div class="about__item item-about">
+							<img class="item-about__img" src="img/about/setting.svg" alt="setting">
+							<!-- /.item-about__img -->
+							<div class="item-about__text">Современное оборудование</div>
+							<!-- /.item-about__text -->
+						</div>
+						<!-- /.about__item -->
+					</div>
+					<!-- /.about__items -->
+					<!-- /.about__container -->
+				</div>
+				<!-- /.about -->
+			</section>
+			<!-- /.about -->
+			<sektion class="studio-help">
+				<div class="studio-help__container">
+					<h2 class="studio-help__title title">Студия Body Time поможет вам:</h2>
+					
+				</div>
+			</sektion>
+			<!-- /.studio-help -->
+			<!-- /.main -->
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

@@ -1,1 +1,10 @@
 // Заголовки, общие БЄМ блоки и проче...
+.title {
+	// Style for "О нас"
+
+font-family: Vanta;
+font-size: rem(48);
+line-height: math.div(62.4, 48);
+text-align: center;
+
+}
