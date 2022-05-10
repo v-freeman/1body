@@ -8,13 +8,14 @@
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		z-index: 1;
+		z-index: 3;
 		@include adaptiveValue("padding-top", 140, 72);
 		@include adaptiveValue("padding-bottom", 140, 48);
 		text-align: center;
 		align-items: center;
 		color: $c_w;
-				font-family: "Vanta Light";
+		font-family: "Vanta Light";
+		
 	}
 	/* .main__title */
 	&__title {
@@ -104,3 +105,81 @@
 }
 
 //====================================================================================================
+.studio-help {
+	@include adaptiveValue("padding-bottom", 140, 48);
+	/* .studio-help__container */
+	&__container {
+	}
+	/* .studio-help__title */
+	&__title {
+	}
+	/* .studio-help__items */
+	&__items {
+		@include adaptiveValue("margin-top", 83, 40);
+		display: grid;
+		gap: rem(32);
+		@media (min-width:$mobile){
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+	}
+	/* .studio-help__item */
+	&__item {
+
+	}
+
+}
+.item-gallery {
+	position: relative;
+	/* .item-gallery__image-ibg */
+	&__image-ibg {
+		border-radius: 16px;
+		padding: 0 0 rem(288) 0;
+		height: 100%;
+	}
+	&_row_col-2{
+		@media (min-width:$mobile){
+			grid-row: span 2;
+			grid-column: span 2;
+		}
+
+	}
+	&_col-2{
+		@media (min-width:$mobile){
+			grid-column: span 2;
+		}
+		
+	}
+	/* .item-gallery__content */
+	&__content {
+	}
+	/* .item-gallery__body */
+	&__body {
+		position: absolute;
+		z-index: 3;
+			top: rem(47);
+			left: rem(48);
+		&_top{
+			top: rem(47);
+			left: rem(48);
+		}
+		&_bottom{
+			top: rem(168);
+			left: rem(48);
+		}
+	}
+	/* .item-gallery__text */
+	&__text {
+		width: rem(400);
+		color: $c_w;
+		@include adaptiveValue("font-size", 28, 16);
+		line-height: math.div(36.4, 28);
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			.item-gallery__text {
+				color: $mainColor;
+			}
+		}
+	}
+}
