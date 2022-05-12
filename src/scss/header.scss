@@ -1,6 +1,14 @@
 //====================================================================================================
 .header {
-
+  @media (max-width:$mobile){
+            background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: rem(72);
+        z-index: 50;
+  }
   /* .header__container */
   &__container {
     @include adaptiveValue("height", 120, 72);
@@ -23,7 +31,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      z-index: 5;
+      z-index: 6;
     }
 
   }
@@ -51,7 +59,7 @@ padding-right: rem(10);
   &__body {
     @media (max-width: $mobile) {
       position: fixed;
-      z-index: 2;
+      z-index: 5;
       top: 0;
       left: -100%;
       width: 100%;
@@ -201,7 +209,7 @@ padding-right: rem(10);
     width: rem(30);
     height: rem(18);
     cursor: pointer;
-    z-index: 5;
+    z-index: 10;
 
     span,
     &::before,
