@@ -15,6 +15,10 @@
 	}
 }
 
+
+._icon-vk_icon:before {
+  content: "\e903";
+}
 ._icon-phone:before {
   content: "\e900";
 }
@@ -23,4 +27,10 @@
 }
 ._icon-location:before {
   content: "\e902";
+}
+._icon-google:before {
+  content: "\ea88";
+}
+._icon-whatsapp:before {
+  content: "\ea93";
 }
