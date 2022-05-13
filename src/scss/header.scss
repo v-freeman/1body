@@ -38,8 +38,14 @@
 
   /* .header__menu */
   &__menu {
-    @include adaptiveValue("margin-left", 116, 10, 1920, 992);
+    @include adaptiveValue("margin-left", 110, 0);
     flex: 1 1 auto;
+    @media (max-width:$pc){
+      margin-left: 20px;
+    }
+    @media (max-width: rem(1170)){
+      margin: rem(5);
+    }
   }
 
   /* .header__contact */
@@ -54,7 +60,7 @@
       font-size: rem(22);
     }
 .menu {
-padding-right: rem(10);
+  padding-right: rem(10);
   /* .menu__body */
   &__body {
     @media (max-width: $mobile) {
@@ -89,7 +95,6 @@ padding-right: rem(10);
     display: flex;
     @include adaptiveValue("gap", 58, 10, );
     padding-left: rem(20);
-
     @media (max-width: $mobile) {
       display: block;
       text-align: center;
@@ -111,7 +116,6 @@ padding-right: rem(10);
   /* .menu__link */
   &__link {
     font-family: Vanta Light;
-
     @media (max-width: $mobile) {
       font-size: rem(25);
     }

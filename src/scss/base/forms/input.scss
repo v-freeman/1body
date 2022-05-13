@@ -9,8 +9,9 @@ textarea {
 	appearance: none;
 }
 .input {
-	border-radius: 0 !important;
+	border-radius: 4px !important;
 	display: inline-block;
+	border: 1px solid #b2b2b2;
 	&._form-focus {
 
 	}

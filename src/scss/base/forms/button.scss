@@ -7,16 +7,15 @@
 	border-radius: 8px;
 	border: 1px solid $c_w;
 	transition: all 0.3s ease 0s;
-	@media (any-hover: hover) {
-		&:hover {
-			border: 1px solid $mainColor;
-			color: $mainColor;
-		}
-	}
 	@media (max-width:$mobile){
-		padding: rem(19) rem(43);
+		padding: rem(19) rem(40);
 	}
 	&._fw {
-		width: 100%;
+		@media (any-hover: hover) {
+		&:hover {
+			border: 1px solid $c_e;
+			color: $c_e;
+			}
+		}
 	}
 }

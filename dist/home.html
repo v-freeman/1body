@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220512225109">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220513193734">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
 
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Наши услуги</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Наши услуги</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Акции</a></li>
 							<li class="menu__item"><a data-da=".contact,750,2" href="" class="menu__link prymary">Прайс</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
@@ -33,14 +33,14 @@
 				<!-- /.menu -->
 				<div class="header__contact contact">
 					<div class="contact__phones">
-						<a href="tel:+380977165584" class="contact__phone__icon _icon-phone"></a>
+						<a href="tel:+380912345678" class="contact__phone__icon _icon-phone"></a>
 						<!-- /.header__phone -->
-						<a data-da=".menu__list,767,4" class="contact__icon " href="https://wa.me/380977165584"><img src="img/icons/whatsapp.svg" alt=""></a>
-						<a data-da=".menu__list,767,6" href="tel:+380977165584" class="contact__phone phone">8(097) 716-55-84</a>
+						<a data-da=".menu__list,767,4" class="contact__icon " href="https://wa.me/380912345678"><img src="img/icons/whatsapp.svg" alt=""></a>
+						<a data-da=".menu__list,767,6" href="tel:+380912345678" class="contact__phone phone">8(091) 234-56-78</a>
 					</div>
 					<!-- /.header__phones -->
 					<div data-da=".menu__list,767,5" class="header__adress adress _icon-location ">
-						<div class="adress__header ">г. Новосибирск, ул. Вокзальная магистраль,16, оф. 205, 2 эт.
+						<div class="adress__header ">г. Киев, ул. Вокзальная магистраль,16, оф. 205, 5 эт.
 						</div>
 						<!-- /.adress__header -->
 					</div>
@@ -60,7 +60,7 @@
 						<div class="main__line"></div><!-- /.main__line -->
 						<div class="main__subtitle">Студия Body Time</div>
 						<!-- /.main__subtitle -->
-						<button class="main__button button">Записаться</button>
+						<button data-popup="#popup" class="main__button button _fw">Записаться</button>
 						<!-- /.main__button -->
 						<div class="main__arrow _icon-arrow-r"></div>
 						<!-- /.main__arrow -->
@@ -333,7 +333,8 @@
 								<input type="submit" name="submit" class="submit" value="ok">
 							</form>
 							<div class="footer__polit">
-								*Политика конфиденциальности
+								<a href="">*Политика конфиденциальности</a>
+
 							</div>
 							<!-- /.footer__polit -->
 						</div>
@@ -356,17 +357,30 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><img src="img/icons/close.svg" alt=""></button>
+				<div class="popup__text text-popup">
+					<div class="text-popup__title">Обратный звонок</div>
+					<!-- /.text-popup__title -->
+					<form action="#" method="post" class="text-popup__form">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="input">
+						<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 (953) 812-12-77" class="input">
+						<input autocomplete="off" id="happy" type="checkbox" name="form[]" data-error="Ошибка" class="custom-checkbox">
+						<label class="text-popup__label" for="happy">
+							<p class="text-popup__text">Заполняя форму на сайте, Вы соглашаетесь с нашей
+								<a class="text-popup__link" href="#">Политикой конфиденциальности</a>
+							</p>
+						</label>
+
+						<button type="submit" class="text-popup__button button">Заказать звонок</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220512225109"></script>
+	<script src="js/app.min.js?_v=20220513193734"></script>
 </body>
 
 </html>

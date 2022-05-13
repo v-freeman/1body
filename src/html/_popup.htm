@@ -1,10 +1,20 @@
-<!-- <div id="popup" aria-hidden="true" class="popup">
+<div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+			<button data-close type="button" class="popup__close"><img src="../img/icons/close.svg" alt=""></button>
+			<div class="popup__text text-popup">
+				<div class="text-popup__title">Обратный звонок</div>
+				<!-- /.text-popup__title -->
+				<form action="#" method="post" class="text-popup__form">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="input">
+					<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 (953) 812-12-77" class="input">
+					<input autocomplete="off" id="happy" type="checkbox" name="form[]" data-error="Ошибка"  class="custom-checkbox">
+					<label class="text-popup__label" for="happy"><p class="text-popup__text">Заполняя форму на сайте, Вы соглашаетесь с нашей 
+						<a class="text-popup__link" href="#">Политикой конфиденциальности</a></p></label>
+
+					<button type="submit" class="text-popup__button button">Заказать звонок</button>
+				</form>
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>

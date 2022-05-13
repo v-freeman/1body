@@ -1,0 +1,48 @@
+.services {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: rem(32);
+	background-color: #E5E5E5;
+	@media (max-width:$mobile){
+		 display: flex;
+		 align-items: center;
+		 flex-direction: column;
+			}
+	/* .services__card */
+	&__card {
+		display: flex;
+		flex-direction: column;
+		gap: rem(24);
+	}
+	/* .services__image-ibg */
+	&__image-ibg {
+		@include adaptiveValue("height", 456, 216);
+		@media (max-width:$mobile){
+			max-width: 781px;
+		}
+	}
+	/* .services__title */
+	&__title {
+		@include adaptiveValue("font-size", 32, 16);
+		line-height: math.div(41, 32);
+	}
+	/* .services__price */
+	&__price {
+
+	}
+}
+.price {
+	/* .price__item */
+	&__item {
+		font-family: "Vanta Light";
+		@include adaptiveValue("font-size", 20, 14);
+		line-height: math.div(26, 20);
+		span{
+			@include adaptiveValue("font-size", 16, 12);
+			text-decoration: line-through;
+		}
+		&:not(:last-child) {
+			margin-bottom: rem(8);
+		}
+	}
+}

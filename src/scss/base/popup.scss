@@ -20,10 +20,74 @@ body::after {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	padding: 30px 10px;
+	padding: rem(30) rem(10);
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
+		/* .popup__close */
+	&__close {
+		position: absolute;
+		top: rem(-38);
+		right: 0;
+		width: rem(18);
+		height: rem(18);
+		background-color: transparent;
+		& img{
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+	/* .popup__text */
+	&__text {
+		text-align: center;
+	}
+}
+.text-popup {
+	/* .text-popup__title */
+	&__title {
+		@include adaptiveValue("font-size", 32, 20);
+		line-height: math.div(38.4, 32);
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+	/* .text-popup__form */
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: rem(24);
+	}
+	&__label{
+		max-width: rem(382);
+		@include adaptiveValue("max-width", 382, 290);
+		font-family: "Vanta Light";
+		@include adaptiveValue("font-size", 12, 10);
+		line-height: math.div(18, 12);
+		text-align: left;
+	}
+	&__button{
+		margin-top: rem(16);
+		border: 1px solid $c_e;
+		color: $c_e;
+		@include adaptiveValue("font-size", 14, 12);
+		@media (any-hover: hover) {
+			&:hover {
+				border: 1px solid $mainColor;
+				color: $mainColor;
+			}
+		}
+	}
+	&__link{
+		text-decoration: underline !important;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $c_e;
+			}
+		}
+	}
 }
 .popup_show {
 	z-index: 150;
@@ -41,21 +105,69 @@ body::after {
 	align-items: center;
 	min-height: 100%;
 	flex: 1 1 auto;
-	width: 100%;
-	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 .popup__content {
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: 20px;
-	width: 100%;
-	max-width: 900px;
-	border-radius: 20px;
+	@include adaptiveValue("width", 512, 300);
+	border-radius: 16px;
+	background-color: #ffffff;
+			@include adaptiveValue("padding-top", 72, 48);
+		@include adaptiveValue("padding-bottom", 72, 48);
 	.lock & {
 		visibility: visible;
 	}
 }
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  font-size: rem(18);
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% 80%;
+}
+.custom-checkbox:checked+label::before {
+  border-color: $c_e;
+  background-color:	$c_e;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+

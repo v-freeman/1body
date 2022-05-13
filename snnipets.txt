@@ -102,7 +102,6 @@
 	"Add input tag": {
 		"scope": "html",
 		"prefix": "inp",
-		"body": "<input autocomplete=\"off\" type=\"text\" name=\"form[]\" data-error=\"Ошибка\" placeholder=\"\" class=\"input\">",
 		"description": "Добавляет input со настройками"
 	},
 	"Add container": {
