@@ -93,7 +93,7 @@ flsForms.formFieldsInit({
 // flsForms.formRating();
 
 /* Модуль работы с select. */
-// import './libs/select.js'
+import './libs/select.js'
 
 /* Модуль работы с календарем */
 // import './files/forms/datepicker.js'
@@ -200,3 +200,10 @@ import "./libs/dynamic_adapt.js";
 /* Подключаем файлы со своим кодом */
 import "./files/script.js";
 //============================================================================================================================================================================================================================================
+const conMenu = document.querySelector('.input__search__btn');
+const enuBody = document.querySelector('.input__search');
+if (conMenu) {
+	conMenu.addEventListener("click", function (e) {
+		enuBody.classList.toggle('_active');
+	});
+}

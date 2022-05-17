@@ -876,7 +876,6 @@
 	},
 	"Select": {
 		"prefix": "sel",
-		"body": "<select name=\"form[]\" data-class-modif=\"form\">\n\t<option value=\"1\" selected>Пункт №1</option>\n\t<option value=\"2\">Пункт №2</option>\n\t<option value=\"3\">Пункт №3</option>\n\t<option value=\"4\">Пункт №4</option>\n</select>",
 		"description": "sel"
 	},
 	"Radio buttons": {

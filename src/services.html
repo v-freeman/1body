@@ -8,7 +8,50 @@
   <div class="wrapper">
     @@include('html/_header.htm',{})
     <main class="page">
+      <div class="head__container">
+      	<div class="head__crumb">Главная ― <span>Наши услуги</span></div>
+      	<!-- /.head__crumb -->
+        <h2 class="head__titile title">Наши услуги</h2>
+        <div class="head__body">
+	        	<div class="head__items">
+	        	<select name="form[1]" data-class-modif="form" >
+	        		<option value="1" selected>Уход за лицом</option>
+	        		<option value="2">Уход за телом</option>
+	        		<option value="3">Пункт №3</option>
+	        		<option value="4">Пункт №4</option>
+	        	</select>
+	        	<select name="form[2]" data-class-modif="form">
+	        		<option value="1" selected>Уход за телом</option>
+	        		<option value="2">Пункт №2</option>
+	        		<option value="3">Пункт №3</option>
+	        		<option value="4">Пункт №4</option>
+	        	</select>
+	        	<select name="form[3]" data-class-modif="form">
+	        		<option value="1" selected>Ресницы</option>
+	        		<option value="2">Пункт №2</option>
+	        		<option value="3">Пункт №3</option>
+	        		<option value="4">Пункт №4</option>
+	        	</select>
+	        	<select name="form[4]" data-class-modif="form">
+	        		<option value="1" selected>Эпиляция</option>
+	        		<option value="2">Пункт №2</option>
+	        		<option value="3">Пункт №3</option>
+	        		<option value="4">Пункт №4</option>
+	        	</select>
+	        	</div>
+        	<!-- /.head__items -->
+        	<div class="head__search">
+        		<form class="input__search__form"> 
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="поиск" class="input__search">
+					  	<a class="input__search__btn"><img src="img/icons/search.svg" alt=""></a>
+						</form>
+        	</div>
+        	<!-- /.head__search -->
+        </div>
+        <!-- /.head__body -->
+      </div>
       <div class="services__container services">
+        <!-- /.services__titile title -->
         <div class="services__card">
           <div class="services__image-ibg"><img src="img/services/01.jpg" alt=""></div>
           <div class="services__title">RF-лифтинг лица (тела) </div>
@@ -180,19 +223,6 @@
         <!-- /.services__card -->
         <div class="services__card">
           <div class="services__image-ibg"><img src="img/services/14.jpg" alt=""></div>
-          <div class="services__title">RF-лифтинг лица (тела) </div>
-          <!-- /.services__title -->
-          <div class="services__price price">
-            <p class="price__item">1 сеанс - 1000 руб.</p>
-            <p class="price__item">4 сеанса - 3600 руб. <span>4000 р.</span></p>
-            <p class="price__item">8 сеансов - 6400 руб. <span>8000 р.</span></p>
-            <!-- /.price__item -->
-          </div>
-          <!-- /.services__price -->
-        </div>
-        <!-- /.services__card -->
-        <div class="services__card">
-          <div class="services__image-ibg"><img src="img/services/15.jpg" alt=""></div>
           <div class="services__title">RF-лифтинг лица (тела) </div>
           <!-- /.services__title -->
           <div class="services__price price">

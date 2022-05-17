@@ -14,7 +14,12 @@
 		display: block;
 	}
 }
-
+[class*="_icon-"] {
+	&:after {
+		@extend %ic;
+		display: block;
+	}
+}
 
 ._icon-vk_icon:before {
   content: "\e903";
