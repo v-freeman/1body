@@ -206,4 +206,12 @@ if (conMenu) {
 	conMenu.addEventListener("click", function (e) {
 		enuBody.classList.toggle('_active');
 	});
+};
+
+const hconMenu = document.querySelector('.head__btn');
+const henuBody = document.querySelector('.head__list');
+if (hconMenu) {
+	hconMenu.addEventListener("click", function (e) {
+		henuBody.classList.toggle('_active');
+	});
 }

@@ -56,8 +56,12 @@
 	&__body{
 		display: flex;
 		justify-content: space-between;
+		@media (max-width:$mobile){
+			height: 50px;
+		}
 	}
 	&__crumb{
+		@include adaptiveValue("padding-top", 140, 112);
 		font-family: "Vanta Light";
 		font-size: 16px;
 			& span {color: $c_e;}
@@ -70,15 +74,52 @@
 		@media (max-width:$tablet){
 			flex-direction: column;
 		}
+		@media (max-width:$mobile){
+			gap: rem(0);
+			width: 20px;
+		}
+
 	}
 	&__titile{
-		@include adaptiveValue("padding-top", 140, 72);
+		@include adaptiveValue("padding-top", 140, 32);
 		&:not(:last-child) {
 			@include adaptiveValue("margin-bottom", 80, 40);
 		}
 	}
 	&__search{
 		text-align: right;
+		margin-right: rem(20);
+	}
+	&__btn{
+		display: none;
+		@media (max-width:$mobile){
+			display: block;
+		}
+	}
+	&__list{
+		display: none;
+		@media (max-width:$mobile){
+			font-family: 'VantaLight';
+			display: block;
+			font-size: 11px;
+			line-height: 27px;
+			align-items: center;
+			text-align: center;
+			padding: 16px;
+			width: 136px;
+			position: relative;
+			left: -1000%;
+			transition: left 0.5s ease 0s;
+			z-index: 3;
+			background-color: #fff;
+			&._active{
+				left: 0;
+
+			}				
+		}
+	}
+	&__item{
+		border-bottom: 0.2px solid #828282;
 	}
 }
 //====================================================================================================
@@ -95,6 +136,7 @@
 		font-size: 14px;
 		letter-spacing: 0.42px;
 		line-height: 23.8px;
+		z-index: 3;
 		&__btn {
 			& img{
 				height: 30px;
@@ -103,6 +145,7 @@
 			}
 		/* .input__search__form */
 		&__form {
+			display: flex;
 		}
 		/* .input__search__button */
 		&__btn {

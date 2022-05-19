@@ -9,44 +9,51 @@
     @@include('html/_header.htm',{})
     <main class="page">
       <div class="head__container">
-      	<div class="head__crumb">Главная ― <span>Наши услуги</span></div>
-      	<!-- /.head__crumb -->
+        <div class="head__crumb"><a href="home.html">Главная</a> ― <span>Наши услуги</span></div>
+        <!-- /.head__crumb -->
         <h2 class="head__titile title">Наши услуги</h2>
         <div class="head__body">
-	        	<div class="head__items">
-	        	<select name="form[1]" data-class-modif="form" >
-	        		<option value="1" selected>Уход за лицом</option>
-	        		<option value="2">Уход за телом</option>
-	        		<option value="3">Пункт №3</option>
-	        		<option value="4">Пункт №4</option>
-	        	</select>
-	        	<select name="form[2]" data-class-modif="form">
-	        		<option value="1" selected>Уход за телом</option>
-	        		<option value="2">Пункт №2</option>
-	        		<option value="3">Пункт №3</option>
-	        		<option value="4">Пункт №4</option>
-	        	</select>
-	        	<select name="form[3]" data-class-modif="form">
-	        		<option value="1" selected>Ресницы</option>
-	        		<option value="2">Пункт №2</option>
-	        		<option value="3">Пункт №3</option>
-	        		<option value="4">Пункт №4</option>
-	        	</select>
-	        	<select name="form[4]" data-class-modif="form">
-	        		<option value="1" selected>Эпиляция</option>
-	        		<option value="2">Пункт №2</option>
-	        		<option value="3">Пункт №3</option>
-	        		<option value="4">Пункт №4</option>
-	        	</select>
-	        	</div>
-        	<!-- /.head__items -->
-        	<div class="head__search">
-        		<form class="input__search__form"> 
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="поиск" class="input__search">
-					  	<a class="input__search__btn"><img src="img/icons/search.svg" alt=""></a>
-						</form>
-        	</div>
-        	<!-- /.head__search -->
+          <div class="head__items">
+            <a class="head__btn"><img src="img/icons/filter.svg" alt=""></a>
+            <ul class="head__list">
+              <li class="head__item"><a href="" class="head__link">Уход за лицом</a></li>
+              <li class="head__item"><a href="" class="head__link">Уход за телом</a></li>
+              <li class="head__item"><a href="" class="head__link">Ресницы</a></li>
+              <li class="head__item"><a href="" class="head__link">Эпиляция</a></li>
+            </ul>
+            <select name="form[1]" data-class-modif="form">
+              <option value="1" selected>Уход за лицом</option>
+              <option value="2">Уход за телом</option>
+              <option value="3">Пункт №3</option>
+              <option value="4">Пункт №4</option>
+            </select>
+            <select name="form[2]" data-class-modif="form">
+              <option value="1" selected>Уход за телом</option>
+              <option value="2">Пункт №2</option>
+              <option value="3">Пункт №3</option>
+              <option value="4">Пункт №4</option>
+            </select>
+            <select name="form[3]" data-class-modif="form">
+              <option value="1" selected>Ресницы</option>
+              <option value="2">Пункт №2</option>
+              <option value="3">Пункт №3</option>
+              <option value="4">Пункт №4</option>
+            </select>
+            <select name="form[4]" data-class-modif="form">
+              <option value="1" selected>Эпиляция</option>
+              <option value="2">Пункт №2</option>
+              <option value="3">Пункт №3</option>
+              <option value="4">Пункт №4</option>
+            </select>
+          </div>
+          <!-- /.head__items -->
+          <div class="head__search">
+            <form class="input__search__form">
+              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="поиск" class="input__search">
+              <a class="input__search__btn"><img src="img/icons/search.svg" alt=""></a>
+            </form>
+          </div>
+          <!-- /.head__search -->
         </div>
         <!-- /.head__body -->
       </div>
