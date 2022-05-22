@@ -5,7 +5,7 @@
 // Стили попапов
 @import "base/popup";
 // Стили спойлеров
-// @import "base/spollers";
+@import "base/spollers";
 
 // Стили табов
 // @import "base/tabs";
@@ -124,4 +124,22 @@
 	&::-webkit-scrollbar {
 		display: none;
 	}
+}
+.breadcrumb ul {
+  display: flex;
+	font-family: "Vanta Light";
+	text-align: left;
+	@include adaptiveValue("font-size", 16, 12);
+	margin-top: rem(20);
+}
+
+.breadcrumb li::before {
+    content: "→";
+}
+    
+.breadcrumb li:first-child::before {
+    content: "";
+}
+.breadcrumb__span{
+	color:$c_e;
 }

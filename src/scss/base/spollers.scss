@@ -5,45 +5,44 @@
 .spollers {
 	display: grid;
 	gap: 15px;
+	
 }
 // Спойлер
-.spollers__item {
-	font-size: rem(20);
+.spollers__item:nth-child(even) {
+	& button {
+	background-color: #f3f3f3;
+	}
 }
 // Заголовок спойлера
-.spollers__title {
+.spollers__title{
 	width: 100%;
 	cursor: default;
 	text-align: left;
 	border: 1px solid #eee;
-	padding: rem(10) rem(15);
+	background-color: #f9f9f9;
+	padding: rem(24) rem(60) rem(24) rem(24);
 	border-radius: rem(5);
 	position: relative;
+	font-family: Vanta;
+	@include adaptiveValue("font-size", 24, 16);
+	line-height: 31.2px;
+	text-align: left;
 	._spoller-init & {
 		cursor: pointer;
-		&::before,
 		&::after {
 			content: "";
 			position: absolute;
-			right: 10px;
-			top: 50%;
-			background-color: #000;
-			height: 2px;
-			width: 15px;
-			transition: transform 0.5s ease 0s;
-		}
-		&::before {
-			transform: translate(-75%, -50%) rotate(40deg);
-		}
-		&::after {
-			transform: translate(0, -50%) rotate(-40deg);
+			right: rem(24);
+			top: 20%;
+			background-image: url(../img/icons/plus-circle.svg);
+			height: 24px;
+			transform: translate(0, 50%);
+			width: 24px;
+			transition: transform 1.5s ease 0s;
 		}
 		&._spoller-active {
-			&::before {
-				transform: translateX(-75%) rotate(-40deg);
-			}
 			&::after {
-				transform: rotate(40deg);
+					background-image: url(../img/icons/minus-circle.svg);
 			}
 		}
 	}
@@ -52,5 +51,6 @@
 .spollers__body {
 	padding: rem(20);
 	border-radius: rem(5);
-	border: 1px solid #eee;
+	border: 1px solid #b3b3b3;
+	background-color: #ffffff;
 }

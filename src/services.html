@@ -9,7 +9,7 @@
     @@include('html/_header.htm',{})
     <main class="page">
       <div class="head__container">
-        <div class="head__crumb"><a href="home.html">Главная</a> ― <span>Наши услуги</span></div>
+       @@include('html/_breadcrumb.htm',{"breadcrum":"Наши услуги"})
         <!-- /.head__crumb -->
         <h2 class="head__titile title">Наши услуги</h2>
         <div class="head__body">
@@ -245,7 +245,6 @@
     </main>
     @@include('html/_footer.htm',{})
   </div>
-  @@include('html/_popup.htm',{})
   @@include('html/_js.htm',{})
 </body>
 
