@@ -401,27 +401,16 @@
 		"description": "margin bottom"
 	},
 	"Margin left": {
-		"scope": "scss,css",
 		"prefix": "mml",
-		"body": [
-			"margin-left: rem($1);"
-		],
 		"description": "margin left"
 	},
 	"Margin right": {
 		"scope": "scss,css",
 		"prefix": "mmr",
-		"body": [
-			"margin-right: rem($1);"
-		],
+
 		"description": "margin right"
 	},
 	"Margin 0 auto": {
-		"scope": "scss,css",
-		"prefix": "mu",
-		"body": [
-			"margin: 0 auto;"
-		],
 		"description": "margin center"
 	},
 	"mc": {

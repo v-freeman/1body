@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Контакты"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <div class="contacts__container">
+        @@include('html/_breadcrumb.htm',{"breadcrum":"Контакты"})
+        <!-- /.head__crumb -->
+        <div class="contacts">
+          <h2 class="title contacts__titile ">Контакты</h2>
+          <div class="contacts__columns">
+            <!-- /.contacts__columns -->
+            <div class="contacts__column">
+              <h3 class="contacts__title">Режим работы</h3>
+              <ul class="contacts__text">
+                <li class="contacts__item">
+                  <span>пн-пт:</span> 9.00-21.00
+                </li>
+                <li class="contacts__item">
+                  <span>сб:</span> 10.00-20.00
+                </li>
+                <li class="contacts__item">
+                  <span>вс:</span> выходной
+                </li>
+              </ul>
+              <!-- /.contacts__tect -->
+              <!-- /.contacts__titile -->
+            </div>
+            <div class="contacts__column">
+              <h3 class="contacts__title">Связаться</h3>
+              <ul class="contacts__text">
+                <li class="contacts__item">
+                  <a href="tel:88008008080" class="contacts__tel">8 (800) 800-80-80</a>
+                  <!-- /.contacts__tel -->
+                </li>
+                <li class="contacts__item">
+                  <a href="mailto:name@email.com" class="contacts__mail">name@email.com</a>
+                  <!-- /.contacts__mail -->
+                </li>
+              </ul>
+              <!-- /.contacts__tect -->
+              <!-- /.contacts__titile -->
+            </div>
+            <div class="contacts__column">
+              <h3 class="contacts__title">Наш адрес</h3>
+              <div class="contacts__text">
+                <p class="contacts__adress">г. Киев, ул. Вокзальная магистраль,16, оф. 205, 5 эт.</p>
+              </div>
+              <!-- /.contacts__text -->
+              <!-- /.contacts__adress -->
+              <!-- /.contacts__tect -->
+              <!-- /.contacts__titile -->
+            </div>
+            <!-- /.contacts__column -->
+          </div>
+        </div>
+      </div>
+      <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810635497!2d-0.24168171983615003!3d51.52877184096648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760dcae7950fef%3A0x89e65c2abc2c3f87!2z0JrQtdC90YHQuNC90LPRgtC-0L3RgdC60LjQuSDQtNCy0L7RgNC10YY!5e0!3m2!1sru!2sua!4v1653319465336!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- /.map -->
+    </main>
+    @@include('html/_footer.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
