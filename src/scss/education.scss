@@ -1,0 +1,287 @@
+.education {
+	&__body{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: rem(1328);
+		margin: 0 auto;
+	}
+	/* .education__titile */
+	&__titile {
+		@include adaptiveValue("margin-top", 117, 70);
+	}
+	/* .education__column */
+	&__column {
+		display: flex;
+		gap: rem(32);
+		@include adaptiveValue("margin-top", 170, 40);
+		@media (max-width:$mobile){
+			flex-direction: column;
+		}
+	}
+	/* .education__text */
+	&__text {
+		color: #5b5b5b;
+		font-family: Vanta;
+		@include adaptiveValue("font-size", 24, 16);
+		line-height: math.div(36, 24);
+		span{
+			font-family: "Vanta Light";
+		}
+		
+	}
+}
+.text_fe{
+	color: $c_e;
+}
+.text_ff{
+	color: #ff5e7e;
+}
+//====================================================================================================
+.education {
+	/* .education__rek */
+	&__rek {
+		position: relative;
+		width: 100%;
+		@include adaptiveValue("height", 520, 320);		
+	}
+}
+.rek-education {
+	@include adaptiveValue("margin-top", 120, 40);
+	/* .rek-education__image-ibg */
+	&__image-ibg {
+
+	}
+	&__bg{
+		position: absolute;
+		border-radius: rem(16);
+		background-color: rgba(0, 0, 0, 0.20);
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+	}
+	/* .rek-education__title */
+	&__title {
+		max-width: rem(568);
+		text-shadow: 0 4px 56px rgba(0, 0, 0, 0.25);
+		color: #ffffff;
+		@include adaptiveValue("font-size", 40, 24);
+		line-height: math.div(52, 40);
+		text-align: left;
+		position: relative;
+		z-index: 3;
+		@include adaptiveValue("padding-top", 200, 30);
+		@include adaptiveValue("padding-left", 80, 10);
+	}
+	/* .rek-education__links */
+	&__links {
+		position: relative;
+		z-index: 3;
+		padding-top: 40px;
+		@include adaptiveValue("padding-left", 80, 10);
+	}
+	/* .rek-education__link */
+	&__link {
+		text-shadow: 0 4px 56px rgba(0, 0, 0, 0.25);
+		color: #ffffff;
+		font-family: Vanta;
+		@include adaptiveValue("font-size", 24, 16);
+		text-align: left;
+		line-height: math.div(40, 24);
+	}
+}
+.rek-education__link-wb{
+	margin-left: 20px;
+	& img{
+		width: 36px;
+		height: 35px;
+	}
+}
+//====================================================================================================
+.program-education {
+	@include adaptiveValue("margin-top", 170, 40);
+	@include adaptiveValue("margin-bottom", 170, 40);
+	
+	/* .program-education__titile */
+	&__body{
+		@include adaptiveValue("margin-top", 120, 20);
+		display: flex;
+		gap: rem(30);	
+		@media (max-width:$tablet){
+			flex-direction: column;
+		}
+	}
+	&__titile {
+		margin: 0 auto;
+	}
+	/* .program-education__theory */
+	&__theory {
+		max-width: rem(779);
+		border-radius: rem(16);
+		background-color: #e2f0ca;
+		@include adaptiveValue("padding", 70, 10);
+	}
+	/* .program-education__practice */
+	&__practice {
+		max-width: rem(779);
+		@include adaptiveValue("padding", 70, 10);
+		background-color: #f3f3f3;
+		border-radius: rem(16);
+	}
+}
+
+.theory-program {
+	/* .theory-program__subtitle */
+	&__subtitle {
+	}
+	/* .theory-program__list */
+	&__list {
+		@include adaptiveValue("margin-top", 48, 24);
+	}
+	/* .theory-program__item */
+	&__item {
+		display: flex;
+		color: #5b5b5b;
+		font-family: "Vanta Light";
+		gap: rem(16);
+		@include adaptiveValue("font-size", 20, 16);
+		line-height: math.div(26, 20);
+		&:not(:last-child) {
+			margin-bottom: rem(16);
+		}
+		&:before{
+			content: "";
+			flex: 0 0 rem(25);
+			width: rem(25);
+			height: rem(25);
+			border-radius: 50%;
+			background-color: $c_e;
+			@media (max-width:$tablet){
+				flex: 0 0 rem(15);
+				width: rem(15);
+				height: rem(15);
+			}
+		}
+	}
+}
+.program {
+	/* .program__subtitle */
+	&__subtitle {
+		@include adaptiveValue("font-size", 32, 24);
+		line-height: math.div(42, 32);
+	}
+}
+.practice-program {
+	/* .practice-program__subtitle */
+	&__subtitle {
+	}
+	/* .practice-program__list */
+	&__list {
+		@include adaptiveValue("margin-top", 48, 24);
+	}
+	/* .practice-program__item */
+	&__item {
+		display: flex;
+		color: #5b5b5b;
+		font-family: "Vanta Light";
+		gap: rem(16);
+		@include adaptiveValue("font-size", 20, 16);
+		line-height: math.div(26, 20);
+		&:not(:last-child) {
+			margin-bottom: rem(16);
+		}
+		&:before{
+			content: "";
+			flex: 0 0 rem(25);
+			width: rem(25);
+			height: rem(25);
+			border-radius: 50%;
+			background-color: #f58ca1;
+			@media (max-width:$tablet){
+			flex: 0 0 rem(15);
+			width: rem(15);
+			height: rem(15);
+			}
+		}
+	}
+}
+//====================================================================================================
+.education {
+	/* .education__footer */
+	&__footer {
+		max-width: 1048px;
+		border-radius: 16px;
+		background-color: #f58ca1;
+		margin: 0 auto;
+		@include adaptiveValue("margin-bottom", 170, 40);
+	}
+}
+.footer-education {
+	padding: rem(80);
+	display: flex;
+	align-items: center;
+	@media (max-width:$mobile){
+			flex-direction: column;
+		}
+	/* .footer-education__title */
+	&__title {
+		// Style for "Стоимость"
+		max-width: rem(310);
+		color: $c_w;
+		font-family: Vanta;
+		@include adaptiveValue("font-size",48 , 30);
+		line-height: 62.4px;
+		text-align: left;
+		line-height: math.div(63, 48);
+		@media (max-width:$mobile){
+			max-width: 100%;
+			margin-bottom: rem(30);
+		}
+	}
+	/* .footer-education__body */
+	&__body {
+		@include adaptiveValue("margin-left", 152, 50);
+		gap: rem(16);
+		
+	}
+	/* .footer-education__price */
+	&__price {
+		color: $c_w;
+		font-family: Vanta;
+		@include adaptiveValue("font-size", 32, 20);	
+		line-height: math.div(42, 32);
+	}
+	/* .footer-education__button */
+	&__button {
+		padding: rem(13) rem(54);
+		color: #74b900;
+		font-family: Vanta;
+		text-align: center;
+		font-size: 18px;
+		background: $c_w;
+		margin: rem(16) 0;
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid $c_e;
+        color: $mainColor;
+      }
+    }
+	}
+	/* .footer-education__text */
+	&__text {
+		display: flex;
+		color: $c_w;
+		font-family: "Vanta Light";
+		@include adaptiveValue("font-size", 14, 10);
+		line-height: math.div(17, 14);
+		&:before{
+				content: "";
+				flex: 0 0 rem(13);
+				border-radius: 50%;
+				width: 13px;
+				height: 13px;
+				background-color: #74b900;
+				margin-right: 10px;
+			}
+		}
+}
